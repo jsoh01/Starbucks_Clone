@@ -1,3 +1,131 @@
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
 :root {
   /* Color */
   --color-black: #2c2a2c;
@@ -48,7 +176,7 @@
 
 * {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -65,7 +193,7 @@ button {
   border-radius: var(--borer-radius-regular);
   padding: 9px 23px;
   cursor: pointer;
-  color: white;
+  color: rgb(190, 77, 77);
   font-size: var(--font-regular);
   transition: all var(--animation-duration) ease;
 }
@@ -160,7 +288,7 @@ a:active {
 }
 
 .small__nav__items::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   background-color: var(--color-light-grey);
   width: 1px;
@@ -288,7 +416,7 @@ a:active {
 }
 
 .tab__bottom {
-  background-image: url('image/tap/gnb_sub_txbg.jpeg');
+  background-image: url("image/tap/gnb_sub_txbg.jpeg");
   width: 100%;
   height: 20%;
   display: inline-block;
@@ -406,7 +534,7 @@ a:active {
 }
 
 .New__menu__bg {
-  background-image: url('image/new__menu/2021_summer2_bg.jpeg');
+  background-image: url("image/new__menu/2021_summer2_bg.jpeg");
   height: 646px;
   background-position: 35% top;
   background-size: cover;
@@ -655,21 +783,21 @@ a:active {
   right: 20px;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox'] + label {
+input[type="checkbox"] + label {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url('image/Slide/main_prom_off.png');
+  background-image: url("image/Slide/main_prom_off.png");
   margin-left: 10px;
   cursor: pointer;
 }
 
-input[type='checkbox']:checked + label {
-  background-image: url('image/Slide/main_prom_on.png');
+input[type="checkbox"]:checked + label {
+  background-image: url("image/Slide/main_prom_on.png");
 }
 
 /* Rewards  */
@@ -736,7 +864,7 @@ input[type='checkbox']:checked + label {
 }
 
 .e-gift::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   background-color: var(--color-line);
   height: 1px;
@@ -760,7 +888,7 @@ input[type='checkbox']:checked + label {
 
 /* Papua__coffee */
 .Papua__coffee__bg {
-  background-image: url('image/Papua__coffee/2021_summer2_bean_bg.jpeg');
+  background-image: url("image/Papua__coffee/2021_summer2_bean_bg.jpeg");
   height: 571px;
   background-position: 50% top;
   background-size: cover;
@@ -828,7 +956,7 @@ input[type='checkbox']:checked + label {
 /* Brazil__coffee */
 .Brazil__coffee {
   height: 392px;
-  background-image: url('image/Brazil__coffee/reserve_sundried_brazil_bg2.jpeg');
+  background-image: url("image/Brazil__coffee/reserve_sundried_brazil_bg2.jpeg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -867,7 +995,7 @@ input[type='checkbox']:checked + label {
 
 /* Pick__menu */
 .Pick__menu__bg {
-  background-image: url('image/Pick__menu/fav_prod_bg_new.jpg');
+  background-image: url("image/Pick__menu/fav_prod_bg_new.jpg");
   height: 790px;
   background-attachment: fixed;
   position: relative;
@@ -937,7 +1065,7 @@ input[type='checkbox']:checked + label {
 }
 
 .Reserve__img::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--color-line);
   height: 1px;
@@ -957,7 +1085,7 @@ input[type='checkbox']:checked + label {
 }
 
 .Reserve__img::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--color-line);
   height: 90%;
@@ -1209,7 +1337,7 @@ input[type='checkbox']:checked + label {
 }
 
 .tac__list::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 13px;
   width: 1px;
@@ -2027,7 +2155,7 @@ input[type='checkbox']:checked + label {
 
   /* New__menu */
   .New__menu__bg {
-    background-image: url('image/new__menu/2021_m_summer2_bg.jpeg');
+    background-image: url("image/new__menu/2021_m_summer2_bg.jpeg");
     height: 250vw;
     background-size: cover;
   }
@@ -2227,7 +2355,7 @@ input[type='checkbox']:checked + label {
   /* Papua__coffee */
   .Papua__coffee__bg {
     height: 1150px;
-    background-image: url('image/Papua__coffee/2021_m_summer2_bean_bg.jpeg');
+    background-image: url("image/Papua__coffee/2021_m_summer2_bean_bg.jpeg");
     background-position: center;
     background-repeat: no-repeat;
   }
